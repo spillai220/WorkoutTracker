@@ -1,6 +1,8 @@
-<a href="#" id='new-button'>New</a>
-<table>
-  <thead>
+<h2>All Records</h2>
+<a class="btn btn-primary" href="#" id='new-button'>New</a>
+
+<table class="table">
+  <thead class="thead-light">
     <tr>
       <th>Date</th>
       <th>Distance</th>
@@ -11,13 +13,13 @@
   </thead>
   <tbody>
     <tr *ngFor = "let joggingInfo of joggingData">
-      <td>{{joggingInfo.date | date: 'shortDate'}}</td>
+      <td>{{joggingInfo.date |  date: 'dd/MM/yyyy'}}</td>
       <td>{{joggingInfo.distance}}</td>
-      <td>{{joggingInfo.timeInSeconds/60}}</td>
-      <td>{{joggingInfo.distance/joggingInfo.timeInSeconds}}</td>
+      <td>{{joggingInfo.timeInSeconds/60}} </td>
+      <td>{{joggingInfo.distance/joggingInfo.timeInSeconds | number:'1.2-2' }}</td>
       <td>
-        <a href="#" (click)="editRecord(this)">Edit</a>
-        <a href="#" (click)="deleteRecord(this)">Delete</a>
+        <a  href="#" (click)="editRecord(this)">Edit &nbsp;</a>
+        <a  href="#" (click)="deleteRecord(this)">Delete</a>
       </td>
     </tr>
 

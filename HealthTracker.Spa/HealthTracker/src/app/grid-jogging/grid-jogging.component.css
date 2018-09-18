@@ -2,6 +2,9 @@ table {
     margin-top: 1.5em;
 
 }
+thead th {
+    text-align: center;
+}
 tbody td {
-    text-align: right;
+    text-align: center;
 }

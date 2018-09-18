@@ -3,10 +3,10 @@
     <add-or-update-jogging (joggingCreated)="createOrUpdateJogging($event)"
     [joggingInfo]="currentJogging"></add-or-update-jogging>
   </div>
-</div>
-<div class="col-md-8">
-  <grid-jogging [joggingData] ="joggingData"
-               (editClicked)="editClicked($event)"
-               (newClicked)="editClicked($event)" 
-               (recordDeleted)="deletedClicked($event)"></grid-jogging>
+  <div class="col-md-8">
+    <grid-jogging [joggingData] ="joggingData"
+                (editClicked)="editClicked($event)"
+                (newClicked)="editClicked($event)" 
+                (recordDeleted)="deletedClicked($event)"></grid-jogging>
+  </div>
 </div>
