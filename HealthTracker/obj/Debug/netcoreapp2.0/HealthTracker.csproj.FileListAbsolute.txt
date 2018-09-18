@@ -1,0 +1,11 @@
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\bin\Debug\netcoreapp2.0\HealthTracker.deps.json
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\bin\Debug\netcoreapp2.0\HealthTracker.runtimeconfig.json
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\bin\Debug\netcoreapp2.0\HealthTracker.runtimeconfig.dev.json
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\bin\Debug\netcoreapp2.0\HealthTracker.dll
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\obj\Debug\netcoreapp2.0\HealthTracker.csprojResolveAssemblyReference.cache
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\obj\Debug\netcoreapp2.0\HealthTracker.csproj.CoreCompileInputs.cache
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\obj\Debug\netcoreapp2.0\HealthTracker.AssemblyInfoInputs.cache
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\obj\Debug\netcoreapp2.0\HealthTracker.AssemblyInfo.cs
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\bin\Debug\netcoreapp2.0\HealthTracker.pdb
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\obj\Debug\netcoreapp2.0\HealthTracker.dll
+c:\users\pilla\source\repos\HealthTracker\HealthTracker\obj\Debug\netcoreapp2.0\HealthTracker.pdb
