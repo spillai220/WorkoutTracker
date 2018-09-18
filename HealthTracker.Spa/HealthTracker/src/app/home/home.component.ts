@@ -51,8 +51,7 @@ export class HomeComponent implements OnInit {
   }
 
   public createOrUpdateJogging (jogging : any){
-    //if jogging is present in JoggingData, we can assume its an update
-    //otherwise, it is adding
+
 
     let joggingWithId;
     joggingWithId = this.joggingData.find(el => el.id == jogging.id);
@@ -60,10 +59,11 @@ export class HomeComponent implements OnInit {
     if(joggingWithId){
       const updateIndex = this.joggingData.findIndex(el => el.id === joggingWithId.id);
       this.workoutService.update(jogging).subscribe(
-        oggingRecord =>  this.joggingData.splice(updateIndex, 1, jogging)
+        joggingRecord =>  this.joggingData.splice(updateIndex, 1, jogging)
       );
     } else {
       this.workoutService.add(jogging).subscribe(
+        //look into this, Id : undefined
         joggingRecord => this.joggingData.push(jogging)
       );
     }

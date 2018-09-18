@@ -23,11 +23,14 @@ export class AddOrUpdateJoggingComponent implements OnInit {
       id: undefined,
       date: '',
       distance: 0,
-      time: 0
+      timeInSeconds: 0
     };
   }
   public addOrUpdateJoggingRecord (event){
     this.joggingCreated.emit(this.joggingInfo);
     this.clearJoggingInfo();
+  }
+  public newRecord() {
+    return this.clearJoggingInfo();
   }
 }
