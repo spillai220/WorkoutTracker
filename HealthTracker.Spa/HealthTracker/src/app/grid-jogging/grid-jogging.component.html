@@ -13,13 +13,13 @@
   </thead>
   <tbody>
     <tr *ngFor = "let joggingInfo of joggingData">
-      <td>{{joggingInfo.date |  date: 'dd/MM/yyyy'}}</td>
+      <td>{{joggingInfo.date |  date: 'yyyy-MM-dd'}}</td>
       <td>{{joggingInfo.distance}}</td>
       <td>{{joggingInfo.timeInSeconds/60}} </td>
       <td>{{joggingInfo.distance/joggingInfo.timeInSeconds | number:'1.2-2' }}</td>
       <td>
-        <a  href="#" (click)="editRecord(this)">Edit &nbsp;</a>
-        <a  href="#" (click)="deleteRecord(this)">Delete</a>
+        <a  href="#" (click)="editRecord(joggingInfo)">Edit &nbsp;</a>
+        <a  href="#" (click)="deleteRecord(joggingInfo)">Delete</a>
       </td>
     </tr>
 

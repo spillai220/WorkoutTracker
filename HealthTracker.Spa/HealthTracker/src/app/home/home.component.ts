@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   constructor(private workoutService : WorkoutService) {
     workoutService.get().subscribe(
       (data : any) => this.joggingData = data
+      
     );
     this.currentJogging = this.setInitialValuesForJoggingData();
    }
@@ -24,17 +25,26 @@ export class HomeComponent implements OnInit {
       id : undefined,
       date: '',
       distance: 0,
-      time: 0
+      timeInSeconds: 0
     }
   }
   public editClicked(record){
-    this.currentJogging = record;
+    let formattedDate = record.date.split('T')[0];
+    //let formattedDate = dateRecord.getFullYear+"-"+dateRecord.getMonth+"-"+dateRecord.getDay;
+
+    this.currentJogging = {
+      id : record.id,
+      date : formattedDate,
+      distance: record.distance,
+      timeInSeconds: record.timeInSeconds
+    }
   }
   public newClicked(){
     this.currentJogging = this.setInitialValuesForJoggingData();
   }
   public deleteClicked(record){
-    const deleteIndex = this.joggingData.findIndex(el => el.id ===record.id);
+    console.log(record)
+    const deleteIndex = this.joggingData.findIndex(el => el.id === record.id);
     this.workoutService.remove(record).subscribe(
       result => this.joggingData.splice(deleteIndex, 1)
     );
